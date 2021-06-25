@@ -41,8 +41,6 @@ class ParadoxPlugin(Plugin):
         self.update_running_games_task = None
         self.update_owned_games_task = None
 
-
-
     async def authenticate(self, stored_credentials=None):
         if stored_credentials:
             stored_cookies = pickle.loads(bytes.fromhex(stored_credentials['cookie_jar']))
